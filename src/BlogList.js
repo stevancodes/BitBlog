@@ -7,7 +7,7 @@ const BlogList = ({ blogs, title }) => {
 
     return (
         <div className="blog-list">
-            <h2>{blogs === [] ? title : "There is no Blogs"}</h2>
+            <h2>{blogs.length > 0 ? title : "There is no Blogs"}</h2>
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
                     <Link to={`/blogs/${blog.id}`}>
