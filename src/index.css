@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: #3577f1;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #3577f1;
+  border-bottom: 2px solid #3577f1;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.home {
+  padding: 20px;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.4);
+
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 2px solid #e0e0e0;
+  transition: 0.2s ease;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-preview:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #5f90eb;
+  border-radius: 10px;
+
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #3577f1;
+  margin-bottom: 8px;
+}
+
+.blog-preview p {
+  margin-top: 30px;
+
+
+}
+
+article {
+  position: relative;
+}
+
+.blog-delete {
+  margin: 10px 0;
+  position: absolute;
+  left: 435px;
+  top: 20px;
+  padding: 10px 15px;
+  border: 0px solid rgb(77, 77, 77);
+  border-radius: 20px;
+  background-color: rgba(22, 115, 255, 0.1);
+
+}
+
+.blog-delete:hover {
+  transform: scale(1.1);
+  transition: 150ms ease;
+  /* border: 1px solid rgb(138, 138, 138); */
+  cursor: pointer;
+}
+
+
+.blog-details h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #3577f1
+}
+
+.blog-details div {
+  margin-top: 10px
+}
+
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #3577f1;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+
+}
+
+.create button {
+  margin: 10px 0;
+  left: 435px;
+  top: 20px;
+  padding: 10px 15px;
+  border: 0px solid rgb(77, 77, 77);
+  border-radius: 20px;
+  background-color: rgba(22, 115, 255, 0.1);
+
+}
+
+
+.create button:hover {
+  transform: scale(1.1);
+  transition: 150ms ease;
+  /* border: 1px solid rgb(138, 138, 138); */
+  cursor: pointer;
+}
