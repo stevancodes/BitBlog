@@ -30,6 +30,11 @@
   padding: 6px;
 }
 
+.navbar a.active {
+  color: #3577f1;
+  border-bottom: 2px solid #3577f1;
+}
+
 .navbar a:hover {
   color: #3577f1;
   border-bottom: 2px solid #3577f1;
