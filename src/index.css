@@ -91,13 +91,16 @@
 
 article {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .blog-delete {
   margin: 10px 0;
-  position: absolute;
-  left: 435px;
-  top: 20px;
+  /* position: absolute; */
+  /* left: 435px;
+  top: 20px; */
   padding: 10px 15px;
   border: 0px solid rgb(77, 77, 77);
   border-radius: 20px;

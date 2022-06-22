@@ -27,9 +27,11 @@ const BlogDetails = () => {
       {error && <div>{error}</div>}
       {blog && (
         <article>
-          <h2>{blog.title}</h2>
-          <p>Written by {blog.author}</p>
-          <div>{blog.body}</div>
+          <div className="inside-wrap">
+            <h2>{blog.title}</h2>
+            <p>Written by {blog.author}</p>
+            <div>{blog.body}</div>
+          </div>
           <button onClick={deleteBlog} className="blog-delete">Delete Blog</button>
         </article>
       )}
