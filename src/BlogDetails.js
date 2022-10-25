@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import { useHistory } from "react-router-dom";
-import DotLoader from "react-spinners/DotLoader";
+import GridLoader from "react-spinners/GridLoader";
 import PulseLoader from "react-spinners/PulseLoader";
 import { CSS_FOR_LOADER } from "./constants";
 
@@ -24,7 +24,7 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
-      {isPending && <DotLoader cssOverride={CSS_FOR_LOADER} color="#3577f1" />}
+      {isPending && <GridLoader cssOverride={CSS_FOR_LOADER} color="#3577f1" />}
       {error && <div>{error}</div>}
       {blog && (
         <article>
