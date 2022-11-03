@@ -1,10 +1,8 @@
-
-import Navbar from './Navbar';
-import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Create from './Create';
-import BlogDetails from './BlogDetails';
-
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Create from "./Pages/Create/Create";
+import BlogDetails from "./Components/BlogDetails/BlogDetails";
 
 function App() {
   return (
@@ -26,7 +24,6 @@ function App() {
         </div>
       </div>
     </Router>
-
   );
 }
 

@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+import useFetch from "../../useFetch";
 import { useHistory } from "react-router-dom";
 import GridLoader from "react-spinners/GridLoader";
 import PulseLoader from "react-spinners/PulseLoader";
-import { CSS_FOR_LOADER } from "./constants";
+import { CSS_FOR_LOADER } from "../../constants";
 
 const BlogDetails = () => {
   const history = useHistory();
   const { id } = useParams();
-  const { data: blog, error, isPending } = useFetch("https://62b1c2f4196a9e98703cb1fe.mockapi.io/blogs/" + id);
+  const {
+    data: blog,
+    error,
+    isPending,
+  } = useFetch("https://62b1c2f4196a9e98703cb1fe.mockapi.io/blogs/" + id);
   const [isLoadingDelete, setIsLoadingDelete] = useState(false);
 
   const deleteBlog = () => {
