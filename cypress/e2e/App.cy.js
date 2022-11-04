@@ -50,14 +50,12 @@ describe("BitBlog", () => {
       });
   });
 
-  let lenghtListLengthAfterAdding = 0;
   it("Initial length should be increased by 1", () => {
     cy.get(".blog-list")
       .find(".blog-preview")
       .then((listing) => {
         const listingCount = Cypress.$(listing).length;
         expect(listing).to.have.length(initialLength + 1);
-        lenghtListLengthAfterAdding = initialLength + 1;
       });
   });
 
@@ -75,6 +73,11 @@ describe("BitBlog", () => {
   });
 
   it("Checking length after deleting", () => {
-    expect(initialLength).to.equal(initialLength);
+    cy.get(".blog-list")
+      .find(".blog-preview")
+      .then((listing) => {
+        const listingCount = Cypress.$(listing).length;
+        expect(listing).to.have.length(initialLength);
+      });
   });
 });
