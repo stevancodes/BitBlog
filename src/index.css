@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
@@ -62,7 +62,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
+  border: 1px solid transparent;
 }
 
 .blog-preview a {
@@ -73,7 +73,6 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border: 1px solid #5f90eb;
   border-radius: 10px;
-
 }
 
 .blog-preview h2 {
@@ -84,8 +83,6 @@
 
 .blog-preview p {
   margin-top: 30px;
-
-
 }
 
 article {
@@ -104,7 +101,6 @@ article {
   border: 0px solid rgb(77, 77, 77);
   border-radius: 20px;
   background-color: rgba(22, 115, 255, 0.1);
-
 }
 
 .blog-delete:hover {
@@ -114,17 +110,15 @@ article {
   cursor: pointer;
 }
 
-
 .blog-details h2 {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #3577f1
+  color: #3577f1;
 }
 
 .blog-details div {
-  margin-top: 10px
+  margin-top: 10px;
 }
-
 
 .create {
   max-width: 400px;
@@ -152,7 +146,6 @@ article {
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
-
 }
 
 .create button {
@@ -163,9 +156,7 @@ article {
   border: 0px solid rgb(77, 77, 77);
   border-radius: 20px;
   background-color: rgba(22, 115, 255, 0.1);
-
 }
-
 
 .create button:hover {
   transform: scale(1.1);
